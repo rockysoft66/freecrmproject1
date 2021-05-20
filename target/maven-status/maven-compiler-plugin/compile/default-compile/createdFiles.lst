@@ -1,0 +1,8 @@
+com\qa\freecrm\utils\Utils.class
+com\qa\freecrm\pages\DealsPage.class
+com\qa\freecrm\pages\ContactsPage.class
+com\qa\freecrm\pages\LoginPage.class
+com\qa\freecrm\pages\TasksPage.class
+com\qa\freecrm\pages\HomePage.class
+com\qa\freecrm\pages\LogPage.class
+com\qa\freecrm\pages\Base.class
