@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FREE CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="3" parallel="tests" name="Failed suite [FREE CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT" verbose="3">
   <listeners>
     <listener class-name="com.qa.freecrm.Listerns.Transfomer"/>
     <listener class-name="com.qa.freecrm.Listerns.ITestListerns"/>
     <listener class-name="com.qa.freecrm.reports.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Free CRM App Test Cases(failed)">
+  <test thread-count="3" parallel="tests" name="Free CRM App Test Cases(failed)" verbose="3">
     <classes>
       <class name="com.qa.freecrm.tests.ContactsPageTest">
         <methods>
           <include name="veryContactTitleTest"/>
           <include name="setup"/>
+          <include name="addContactsTest"/>
           <include name="treardown"/>
         </methods>
       </class> <!-- com.qa.freecrm.tests.ContactsPageTest -->

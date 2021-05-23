@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.freecrm.tests.ContactsPageTest">
+      <class name="com.qa.freecrm.tests.LoginPageTest">
         <methods>
-          <include name="veryContactTitleTest"/>
-          <include name="setup"/>
+          <include name="verfyLoginPageTest"/>
           <include name="treardown"/>
+          <include name="verifyLogTest"/>
+          <include name="setup"/>
+          <include name="verifypagetiletest"/>
         </methods>
-      </class> <!-- com.qa.freecrm.tests.ContactsPageTest -->
+      </class> <!-- com.qa.freecrm.tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,11 +1,15 @@
 package com.qa.freecrm.pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogPage extends Base {
 	
+	
+	Logger log = Logger.getLogger(LogPage.class);
+			
 	@FindBy(name = "email")
 	WebElement email;
 	
@@ -26,7 +30,7 @@ public class LogPage extends Base {
 	}
 	
 	public HomePage verylogin(String gmail, String password) {
-		
+		log.info(password);
 		 email.sendKeys(gmail);
 		 pass.sendKeys(password);
 		 login.click();
